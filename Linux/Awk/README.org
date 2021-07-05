@@ -1,5 +1,5 @@
 #+TITLE: Awk
-#+PROPERTY: header-args
+#+PROPERTY: header-args:sh :exports both
 
 Awk is a text manipulation tool that allows us to grab certain columns from text. Lets
 run ~ps~ for example and see what output we get:
