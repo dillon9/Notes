@@ -1,5 +1,5 @@
 #+TITLE: Awk
-#+PROPERTY: header-args :exports results
+#+PROPERTY: header-args
 
 Awk is a text manipulation tool that allows us to grab certain columns from text. Lets
 run ~ps~ for example and see what output we get:
@@ -326,7 +326,7 @@ If it is worth noting ~$0~ will print the full output:
   : /dev/loop4         56832    56832         0 100% /var/lib/snapd/snap/core18/2074
 
   We can also use ~NR~ to get a line count of a file, lets pick on =/etc/shells= again:
-  #+begin_src sh :results verbatim
+  #+begin_src sh :results verbatim :exports results
     awk 'END {print NR}' /etc/shells
   #+end_src
 
