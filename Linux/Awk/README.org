@@ -326,9 +326,11 @@ If it is worth noting ~$0~ will print the full output:
   : /dev/loop4         56832    56832         0 100% /var/lib/snapd/snap/core18/2074
 
   We can also use ~NR~ to get a line count of a file, lets pick on =/etc/shells= again:
-  #+begin_src sh :results verbatim
+  #+begin_src sh :results verbatim :export both
     awk 'END {print NR}' /etc/shells
   #+end_src
 
   #+RESULTS:
   : 8
+
+  # TODO: looking to fixing the export on [[https://github.com/wallyqs/org-ruby][org-ruby]].
